@@ -1,6 +1,6 @@
 # proxy-gen-telegram-bot
 
->This will generate the proxy which less than <50ms out of list. It is based on Telegram bot API and module usage of python-telegram-bot
+>This will generate the proxy which less than <50ms out of list. It is based on Telegram bot API and module usage of python-telegram-bot.
 
 ### Clone
 
@@ -8,10 +8,11 @@
 
 ### Setup
 
-- Get token from telegram bot API from botfather.
+- Get token from telegram bot API in botfather of telegram.
 - Use generated token in proxy-gen-telegram-bot file.
 
 ### Installation
+
 >Linux
 ```shell
 $ pip3 install -r requirements.txt
@@ -21,9 +22,11 @@ $ pip3 install -r requirements.txt
 ```shell
 $ pip install -r requirements.txt
 ```
+
 - Modules will be installed are `python-telegram-bot`,`pytz`,`requests`.
 
-###Usage
+### Usage
+
 >Linux
 ```shell
 $ python3 testing_proxy_gen.py
@@ -37,7 +40,7 @@ $ python testing_proxy_gen.py
 - Now bot will up and use the commands `http`,`socks4`,`socks5`.
 
 ### Deployment
->We use heroku here with files `Procfile` and `requirements` necessary.
+>We use heroku here with files of `Procfile` and `requirements` necessary.
 
 - Steps to Deploy in Heroku.
 
@@ -46,6 +49,7 @@ $ heroku login
 $ heroku git:clone -a `bot name here`
 $ cd `bot name here`
 ```
+
 - Deploy the files in Heroku.
 
 ```shell
