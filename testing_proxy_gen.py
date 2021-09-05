@@ -17,7 +17,7 @@ def checker(proxytext):
         proxy = proxy.split(':')
         data = {"ip_addr": proxy[0], "port": proxy[1]}
 
-        response = requests.post('https://onlinechecker.proxyscrape.com/index.php', data=data)
+        response = requests.post('https://api.proxyscrape.com/v2/online_check.php', data=data)
         x = response.json()
 
         ip = x["ip"]
